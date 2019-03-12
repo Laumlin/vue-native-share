@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -16,15 +15,30 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <vue-native-share :shareMenu="shareMenu" :config="config"/>
   </div>
 </template>
 
 <script>
+import vueNativeShare from './plugins/vue-native-share'
 export default {
   name: 'app',
+  components: {
+    vueNativeShare,
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      shareMenu: [0,3,5],
+      config: {
+        title: '分享标题',
+        desc:'描述',
+        img:'图片地址',
+        img_title:'图片标题',
+        link: '当前链接',
+        success: () => {console.log('success')},
+        cancel: () => {console.log('cancel')},
+      }
     }
   }
 }
