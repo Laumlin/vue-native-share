@@ -1,7 +1,7 @@
 {
   "name": "vue-native-share",
   "description": "A Vue.js project",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "laumlin <zhengkanglin@itiger.com>",
   "license": "MIT",
   "private": false,
@@ -9,6 +9,10 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laumlin/vue-native-share.git"
   },
   "dependencies": {
     "m-share": "^1.0.1",
