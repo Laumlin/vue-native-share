@@ -4,6 +4,8 @@
 支持的浏览器：UC浏览器，QQ浏览器，百度浏览器
 不支持则提示：手动调起浏览器自带的分享面板
 
+![](https://img-blog.csdn.net/20180807230845339?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTE0NzA5OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 ##使用
 ```js
 npm i vue-native-share 
@@ -40,6 +42,8 @@ data () {
 | [3] | qq好友 |
 | [4] | qq空间 |
 | [5] | 更多 |
+
+
 不传入shareMenu则默认设为[0,1,2,3,4,5]
 
 
