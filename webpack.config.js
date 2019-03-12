@@ -2,11 +2,14 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/plugins/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
+    publicPath: './dist/',
+    filename: 'vue-native-share.js',
+    library: 'vue-native-share',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
